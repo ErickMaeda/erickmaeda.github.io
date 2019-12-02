@@ -1,0 +1,76 @@
+[debug] [2019-11-27T13:08:07.901Z] ----------------------------------------------------------------------
+[debug] [2019-11-27T13:08:07.903Z] Command:       /usr/local/Cellar/node/12.12.0/bin/node /usr/local/bin/firebase deploy
+[debug] [2019-11-27T13:08:07.903Z] CLI Version:   7.8.1
+[debug] [2019-11-27T13:08:07.903Z] Platform:      darwin
+[debug] [2019-11-27T13:08:07.903Z] Node Version:  v12.12.0
+[debug] [2019-11-27T13:08:07.904Z] Time:          Wed Nov 27 2019 13:08:07 GMT+0000 (Western European Standard Time)
+[debug] [2019-11-27T13:08:07.904Z] ----------------------------------------------------------------------
+[debug] [2019-11-27T13:08:07.904Z] 
+[debug] [2019-11-27T13:08:07.913Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-11-27T13:08:07.914Z] > authorizing via signed-in user
+[debug] [2019-11-27T13:08:07.914Z] [iam] checking project erick-maeda for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2019-11-27T13:08:07.915Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2019-11-27T13:08:07.915Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2019-11-27T13:08:08.126Z] <<< HTTP RESPONSE 200
+[debug] [2019-11-27T13:08:08.138Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/erick-maeda:testIamPermissions  
+
+[debug] [2019-11-27T13:08:09.087Z] <<< HTTP RESPONSE 200
+[debug] [2019-11-27T13:08:09.088Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/erick-maeda  
+ 
+[debug] [2019-11-27T13:08:09.702Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'erick-maeda'...
+[info] 
+[info] i  deploying hosting
+[debug] [2019-11-27T13:08:09.706Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/erick-maeda/versions  
+
+[debug] [2019-11-27T13:08:11.963Z] <<< HTTP RESPONSE 200
+[info] i  hosting[erick-maeda]: beginning deploy...
+[info] i  hosting[erick-maeda]: found 101 files in /
+[debug] [2019-11-27T13:08:12.006Z] [hosting] hash cache [] stored for 101 files
+[debug] [2019-11-27T13:08:12.007Z] [hosting][hash queue][FINAL]
+[debug] [2019-11-27T13:08:12.007Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/erick-maeda/versions/4eaf74c3b611dd18:populateFiles  
+ <request body omitted>
+[debug] [2019-11-27T13:08:14.731Z] <<< HTTP RESPONSE 200
+[debug] [2019-11-27T13:08:14.732Z] [hosting][populate queue][FINAL]
+[debug] [2019-11-27T13:08:14.732Z] [hosting] uploads queued: 0
+[debug] [2019-11-27T13:08:14.732Z] [hosting][upload queue][FINAL]
+[info] ✔  hosting[erick-maeda]: file upload complete
+[debug] [2019-11-27T13:08:14.733Z] [hosting] deploy completed after 2769ms
+[debug] [2019-11-27T13:09:15.630Z] ----------------------------------------------------------------------
+[debug] [2019-11-27T13:09:15.631Z] Command:       /usr/local/Cellar/node/12.12.0/bin/node /usr/local/bin/firebase deploy
+[debug] [2019-11-27T13:09:15.632Z] CLI Version:   7.8.1
+[debug] [2019-11-27T13:09:15.632Z] Platform:      darwin
+[debug] [2019-11-27T13:09:15.632Z] Node Version:  v12.12.0
+[debug] [2019-11-27T13:09:15.632Z] Time:          Wed Nov 27 2019 13:09:15 GMT+0000 (Western European Standard Time)
+[debug] [2019-11-27T13:09:15.632Z] ----------------------------------------------------------------------
+[debug] [2019-11-27T13:09:15.632Z] 
+[debug] [2019-11-27T13:09:15.640Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-11-27T13:09:15.641Z] > authorizing via signed-in user
+[debug] [2019-11-27T13:09:15.641Z] [iam] checking project erick-maeda for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2019-11-27T13:09:15.642Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/erick-maeda:testIamPermissions  
+
+[debug] [2019-11-27T13:09:16.882Z] <<< HTTP RESPONSE 200
+[debug] [2019-11-27T13:09:16.884Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/erick-maeda  
+ 
+[debug] [2019-11-27T13:09:17.290Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'erick-maeda'...
+[info] 
+[info] i  deploying hosting
+[debug] [2019-11-27T13:09:17.299Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/erick-maeda/versions  
+
+[debug] [2019-11-27T13:09:19.253Z] <<< HTTP RESPONSE 200
+[info] i  hosting[erick-maeda]: beginning deploy...
+[info] i  hosting[erick-maeda]: found 101 files in /
+[debug] [2019-11-27T13:09:19.295Z] [hosting] hash cache [] stored for 101 files
+[debug] [2019-11-27T13:09:19.295Z] [hosting][hash queue][FINAL]
+[debug] [2019-11-27T13:09:19.295Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/erick-maeda/versions/9d45ff7bf65249d3:populateFiles  
+ <request body omitted>
+[debug] [2019-11-27T13:09:22.118Z] <<< HTTP RESPONSE 200
+[debug] [2019-11-27T13:09:22.118Z] [hosting][populate queue][FINAL]
+[debug] [2019-11-27T13:09:22.118Z] [hosting] uploads queued: 0
+[debug] [2019-11-27T13:09:22.118Z] [hosting][upload queue][FINAL]
+[info] ✔  hosting[erick-maeda]: file upload complete
+[debug] [2019-11-27T13:09:22.119Z] [hosting] deploy completed after 2865ms
