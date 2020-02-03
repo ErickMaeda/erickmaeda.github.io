@@ -2,5 +2,5 @@
 
 # Erick Maeda Profile Page
 
-https://erickmaeda.com.br
-https://reacttestsky.erickmaeda.com.br
+- https://erickmaeda.com.br
+- https://reacttestsky.erickmaeda.com.br
