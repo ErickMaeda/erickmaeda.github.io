@@ -23,7 +23,7 @@ jobs:
           command: 'sudo npm install -g npm@latest'
       - run:
           name: install-npm
-          command: npm install
+          command: cd public && npm install
       - run: # make  copy of .firebaserc
           name: generate-firebaserc
           command: cp .firebaserc.example .firebaserc
