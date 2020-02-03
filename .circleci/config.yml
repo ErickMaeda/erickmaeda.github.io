@@ -32,7 +32,7 @@ jobs:
           command: sed -i "s/\[YOUR\-PROJECT\-ID\]/$FIREBASE_PROJECT_ID/g" .firebaserc
       - run:
           name: Deploy Firebase
-          command: ./node_modules/.bin/firebase deploy --token "$FIREBASE_TOKEN" --only hosting
+          command: ./public/node_modules/.bin/firebase deploy --token "$FIREBASE_TOKEN" --only hosting
 
 workflows:
   version: 2
