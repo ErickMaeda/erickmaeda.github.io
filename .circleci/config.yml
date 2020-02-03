@@ -5,8 +5,6 @@ jobs:
             - image: circleci/node:10.16.0
         working_directory: ~/repo
         steps:
-	    - checkout
-            # Download and cache dependencies
             - restore_cache:
                   keys:
                       - v1-dependencies-{{ checksum "package.json" }}
