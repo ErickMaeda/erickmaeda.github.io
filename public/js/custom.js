@@ -27,4 +27,21 @@ function validateForm() {
     }
     document.getElementById('status').innerHTML = "Sending...";
     document.getElementById('button-send').disabled = true;
+
+    const params = {
+        "emailTemplateCode": "x35U5bXvJAdhXZWndvtf",
+        "email": email,
+        "name": name,
+        "reason": subject,
+        "notes": message
+    };
+    $.post("https://us-central1-erick-maeda.cloudfunctions.net/email", params)
+        .done(function () {
+            document.getElementById('status').innerHTML = "Email sent successfully!";
+            document.getElementById('button-send').disabled = true;
+            setTimeout(function () {
+                document.getElementById('status').innerHTML = "";
+                document.getElementById('button-send').disabled = false;
+            }, 3000);
+        })
 }
