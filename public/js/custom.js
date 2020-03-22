@@ -25,8 +25,9 @@ function validateForm() {
         document.getElementById('status').innerHTML = "Message cannot be empty";
         return false;
     }
-    document.getElementById('status').innerHTML = "Sending...";
+    document.getElementById('status').innerHTML = "";
     document.getElementById('button-send').disabled = true;
+    $('#loading').show();
 
     const params = {
         "emailTemplateCode": "x35U5bXvJAdhXZWndvtf",
@@ -37,6 +38,7 @@ function validateForm() {
     };
     $.post("https://us-central1-erick-maeda.cloudfunctions.net/email", params)
         .done(function () {
+            $('#loading').hide();
             document.getElementById('status').innerHTML = "Email sent successfully!";
             document.getElementById('button-send').disabled = true;
             setTimeout(function () {
